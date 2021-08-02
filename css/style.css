@@ -1,0 +1,731 @@
+/* font-family: 'Bai Jamjuree', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+}
+
+.logo {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: hsl(171, 66%, 44%);
+}
+
+.head-title {
+    color: hsl(210, 10%, 33%);
+}
+
+.info {
+    padding: 5% 6%;
+    font-size: 0.92em;
+    color: hsl(201, 11%, 66%);
+}
+
+.container-bottom {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.button-ios {
+    display: block;
+    margin: 2% auto;
+    padding: 2% 20%;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: white;
+    background-color: hsl(171, 66%, 44%);
+    border: 2px solid hsl(171, 66%, 44%);
+    border-bottom: 2px solid hsla(170, 66%, 44%, 0.521);
+    box-shadow: 0 8px 6px -7px hsl(171, 66%, 44%);
+    border-radius: 25px;
+}
+
+.button-mac {
+    display: block;
+    margin: 2% auto;
+    padding: 2% 20%;
+    font-family: 'Bai Jamjuree',
+        sans-serif;
+    color: white;
+    background-color: hsl(233, 100%, 69%);
+    border: 2px solid hsl(233, 100%, 69%);
+    border-bottom: 2px solid hsla(233, 100%, 69%, 0.521);
+    box-shadow: 0 8px 6px -7px hsl(233, 100%, 69%);
+    border-radius: 25px;
+}
+
+.head {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+p.logo {
+    padding-top: 10vh;
+    font-size: 9em;
+}
+
+.head-title {
+    margin: 0 5%;
+    font-size: 1.7em;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-first {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-large {
+    margin: 0% 5%;
+    font-size: 1.3em;
+    color: hsl(210, 10%, 33%);
+}
+
+.picture-comp {
+    background-image: url(../images/image-computer.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+}
+
+.header-small {
+    margin: 0% 5%;
+    font-size: 1.2em;
+    color: hsl(210, 10%, 33%);
+}
+
+.container-second {
+    margin-top: 20%;
+}
+
+.picture-tablet {
+    background-image: url(../images/image-devices.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+}
+
+.icon {
+    display: block;
+    margin: 7% auto;
+    height: 32px;
+}
+
+.container-logo {
+    margin-top: 30%;
+    margin-bottom: 30%;
+}
+
+.logo-sec {
+    display: block;
+    margin: 12% auto;
+}
+
+.container-fourth {
+    margin-top: 30%;
+    margin-bottom: 30%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(201, 11%, 66%, 0.1);
+}
+
+.footer-logo {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.footer-logo img {
+    width: 10%;
+}
+
+.contact {
+    display: block;
+    padding: 3%;
+    color: black;
+    text-decoration: none;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    margin: 5% 20%;
+    justify-content: space-around;
+}
+
+.attribution {
+    margin-top: 7%;
+    margin-bottom: 5%;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (orientation: portrait) and (max-height:570px) {
+    p.logo {
+        padding-top: 5vh;
+        font-size: 7em;
+    }
+
+    .head-title {
+        font-size: 1.4em;
+    }
+}
+
+@media (orientation: portrait) and (min-width:411px) {
+    .head {
+        height: 90vh;
+    }
+}
+
+@media (orientation: portrait) and (min-width:768px) {
+    .head {
+        height: 100vh;
+    }
+
+    .picture-comp {
+        height: 60vh;
+    }
+
+    p.logo {
+        padding-top: 15vh;
+        font-size: 11em;
+    }
+
+    .head-title {
+        font-size: 3em;
+    }
+
+    .info {
+        font-size: 1.5em;
+    }
+
+    .header-large {
+        font-size: 2.5em;
+    }
+
+    .header-small {
+        font-size: 2.2em;
+    }
+
+    .button-ios {
+        font-size: 1.5em;
+        border-radius: 40px;
+    }
+
+    .button-mac {
+        font-size: 1.5em;
+        border-radius: 40px;
+    }
+
+}
+
+@media (orientation: portrait) and (min-width:1024px) {
+    .head {
+        height: 60vh;
+        background-image: url(../images/bg-header-desktop.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100%;
+    }
+
+    p.logo {
+        padding-top: 5vh;
+        font-size: 11em;
+        font-weight: 400;
+    }
+
+    .container-bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 2% 12%;
+    }
+
+    .button-ios {
+        padding: 2% 9%;
+    }
+
+    .button-mac {
+        padding: 2% 9%;
+    }
+
+
+    .pic-text {
+        position: relative;
+        text-align: left;
+    }
+
+    .picture-comp {
+        position: absolute;
+        top: -15%;
+        left: -23%;
+        width: 80%;
+        height: 60vh;
+    }
+
+    .wrrap {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+        margin-left: 50%;
+    }
+
+    .size.header-small {
+        font-size: 1.4em;
+    }
+
+    .icon {
+        height: 32px;
+    }
+
+    .wr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        margin: 0 5%;
+    }
+
+    .con-th {
+        width: 100%;
+    }
+
+    .container-logo {
+        display: flex;
+        flex-direction: row;
+        margin: 10% 5%;
+    }
+
+    .logo-sec {
+        margin: 2% auto;
+    }
+
+    .container-fourth {
+        margin-top: 10%;
+    }
+
+    .footer {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 15vh;
+    }
+
+    .footer-logo {
+        margin: 0;
+        width: 40%;
+        flex-grow: 1;
+    }
+
+    .footer-logo img {
+        width: 20%;
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        flex-grow: 2;
+    }
+
+    .f-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .contact {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        font-size: 22px;
+
+    }
+
+    .socials {
+        margin: 2% 10%;
+        flex-grow: 1;
+    }
+
+    .socials a {
+        padding: 25%;
+    }
+
+    .attribution {
+        margin-bottom: 2%;
+        font-size: 20px;
+    }
+
+}
+
+@media (orientation: landscape) and (max-height:319px) {
+    .head-title {
+        font-size: 1.5em;
+    }
+
+    .info {
+        padding: 2% 6%;
+        font-size: 0.7em;
+    }
+
+    .container-first {
+        position: relative;
+        margin-top: 10%;
+
+    }
+
+    .pic-text {
+        position: relative;
+        text-align: left;
+    }
+
+    .picture-comp {
+        position: absolute;
+        top: 28%;
+        left: -9%;
+        width: 60%;
+        height: 100vh;
+    }
+
+    .wrrap {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+        margin-left: 50%;
+        text-align: left;
+    }
+
+    .container-second {
+        margin-top: 10%;
+    }
+}
+
+@media (orientation: landscape) and (min-width:533px) {
+    p.logo {
+        padding-top: 2vh;
+        font-size: 4em;
+        font-weight: 400;
+    }
+
+    .info {
+        font-size: 0.8em;
+    }
+
+    .container-bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 2% 12%;
+    }
+
+    .button-ios {
+        padding: 2% 9%;
+    }
+
+    .button-mac {
+        padding: 2% 9%;
+    }
+
+    .container-first {
+        margin-top: 10%;
+
+    }
+
+    .pic-text {
+        position: relative;
+        text-align: left;
+    }
+
+    .picture-comp {
+        position: absolute;
+        top: 5%;
+        left: -14%;
+        width: 70%;
+        height: 100vh;
+    }
+
+    .wrrap {
+        display: flex;
+        flex-direction: column;
+        margin-top: 7%;
+        margin-left: 50%;
+        margin-right: 5%;
+        text-align: left;
+    }
+
+    .container-second {
+        margin-top: 10%;
+    }
+
+    .picture-tablet {
+        background-size: 50%;
+        height: 70vh;
+    }
+
+    .container-fourth {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .container-logo {
+        display: flex;
+        flex-direction: row;
+        margin: 5% 5%;
+    }
+
+    .logo-sec {
+        margin: 2% auto;
+        width: 15%;
+    }
+
+}
+
+@media (orientation: landscape) and (min-width:720px) and (height:540px) {
+    .head {
+        height: 80vh;
+    }
+
+    .picture-comp {
+        top: 14%;
+    }
+}
+
+@media (orientation: landscape) and (min-width:1024px) {
+    .head {
+        height: 70vh;
+        background-image: url(../images/bg-header-desktop.png);
+        background-size: contain;
+    }
+
+    p.logo {
+        padding-top: 5vh;
+        font-size: 8em;
+        font-weight: 400;
+    }
+
+    .info {
+        padding: 2% 21%;
+    }
+
+    .container-bottom {
+        margin: 0% 16%;
+    }
+
+    .button-ios {
+        padding: 2% 12%;
+        font-size: 1em;
+    }
+
+    .button-ios:hover {
+        background-color: hsla(171, 66%, 44%, 0.897);
+        cursor: pointer;
+    }
+
+    .button-mac {
+        padding: 2% 12%;
+        font-size: 1em;
+    }
+
+    .button-mac:hover {
+        background-color: hsla(233, 100%, 69%, 0.897);
+        cursor: pointer;
+    }
+
+    .picture-comp {
+        position: absolute;
+        top: -48%;
+        left: -9%;
+        width: 60%;
+        height: 100vh;
+    }
+
+    .header-small {
+        margin: 0% 21%;
+    }
+
+    .container-second {
+        margin-top: 20%;
+    }
+
+    .picture-tablet {
+        background-size: 80%;
+        height: 70vh;
+    }
+
+    .size.header-small {
+        font-size: 1.4em;
+        margin: 0 10%;
+    }
+
+    .icon {
+        height: 32px;
+    }
+
+    .wr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        margin: 0 5%;
+    }
+
+    .con-th {
+        width: 100%;
+    }
+
+    .logo-sec {
+        margin: 2% auto;
+        width: auto;
+    }
+
+    .footer {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 20vh;
+    }
+
+    .footer-logo {
+        margin: 0;
+        width: 40%;
+        flex-grow: 1;
+    }
+
+    .footer-logo img {
+        width: 20%;
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        flex-grow: 2;
+    }
+
+    .f-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .contact {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        font-size: 22px;
+    }
+
+    .socials {
+        margin: 2% 10%;
+    }
+
+    .socials a {
+        padding: 25%;
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 1%;
+        font-size: 20px;
+    }
+}
+
+@media (orientation: landscape) and (min-width:1240px) {
+    p.logo {
+        font-size: 10em;
+    }
+
+    .head-title {
+        font-size: 2em;
+    }
+
+    .info {
+        padding: 2% 21%;
+        font-size: 1.1em;
+    }
+
+
+    .container-bottom {
+        margin: 0% 22%;
+    }
+
+    .button-ios {
+        font-size: 1.2em;
+        border-radius: 50px;
+    }
+
+    .button-mac {
+        font-size: 1.2em;
+        border-radius: 50px;
+    }
+
+    .container-first {
+        margin-top: 0%;
+    }
+}
+
+@media (orientation: landscape) and (min-width:1600px) {
+    .picture-comp {
+        position: absolute;
+        top: -35%;
+        left: 5%;
+        width: 50%;
+    }
+
+    .picture-tablet {
+        background-size: 50%;
+        height: 90vh;
+    }
+
+    .container-bottom {
+        margin: 0% 25%;
+    }
+
+    .container-second {
+        margin-top: 15%;
+    }
+
+    .picture-tablet {
+        height: 100vh;
+    }
+}
